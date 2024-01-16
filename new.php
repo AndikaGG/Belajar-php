@@ -79,15 +79,21 @@
         // Ambil nilai dari formulir dan sanitasi
         $username = htmlspecialchars($_POST["username"], ENT_QUOTES, 'UTF-8');
         $password = htmlspecialchars($_POST["password"], ENT_QUOTES, 'UTF-8');
-    
+
         // Contoh validasi sederhana (biasanya, Anda akan memvalidasi dengan database)
         if ($username == "user" && $password == "password") {
             echo "Login berhasil!";
         } else {
             echo "Login gagal. Silakan coba lagi.";
         }
+    } else {
+        // Jika ada parameter GET, tangani di sini
+        if (isset($_GET['status'])) {
+            $status = htmlspecialchars($_GET['status'], ENT_QUOTES, 'UTF-8');
+            echo "<p>Status: $status</p>";
+        }
     }
-    ?>
+  ?>
 
 </body>
 </html>

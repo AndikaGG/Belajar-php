@@ -31,7 +31,7 @@
     }
 
     .form-submit {
-      background-color: #4caf50;
+      background-color:#45a049;
       color: white;
       padding: 10px 15px;
       border: none;
@@ -40,7 +40,7 @@
     }
 
     .form-submit:hover {
-      background-color: #45a049;
+      background-color:#FF0000;
     }
 
     .reset-password {
@@ -59,7 +59,7 @@
 
   <div class="form-container">
     <h2>Login Form</h2>
-    <form action="process-login.php" method="post">
+    <form action="neww.php" method="post">
       <label for="username" class="form-label">Username:</label>
       <input type="text" id="username" name="username" class="form-input" required>
 
